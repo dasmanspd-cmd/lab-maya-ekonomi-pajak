@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 620" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="100%" stop-color="#050c18"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3fd6ff"/>
+      <stop offset="100%" stop-color="#0088cc"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffb238"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(30, 58, 87, 0.6)"/>
+      <stop offset="100%" stop-color="rgba(10, 24, 40, 0.8)"/>
+    </linearGradient>
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="480" height="620" rx="16" fill="url(#bgGrad)" stroke="#1c3a57" stroke-width="1.5"/>
+
+  <!-- Circuit Pattern Accents -->
+  <path d="M 20,40 L 80,40 L 100,60 L 200,60" stroke="rgba(63,214,255,0.2)" stroke-width="1.5" fill="none"/>
+  <circle cx="200" cy="60" r="3" fill="#3fd6ff"/>
+  <path d="M 460,580 L 400,580 L 380,560 L 280,560" stroke="rgba(255,178,56,0.2)" stroke-width="1.5" fill="none"/>
+  <circle cx="280" cy="560" r="3" fill="#ffb238"/>
+
+  <!-- Header Banner -->
+  <rect x="24" y="24" width="432" height="48" rx="10" fill="rgba(63,214,255,0.08)" stroke="rgba(63,214,255,0.3)" stroke-width="1"/>
+  <text x="240" y="44" fill="#3fd6ff" font-family="'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" letter-spacing="1">SIKLUS APBN &amp; FUNGSI PAJAK</text>
+  <text x="240" y="60" fill="#94a3b8" font-family="'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">Pasal 23A UUD 1945 &amp; UU KUP</text>
+
+  <!-- Box 1: Sumber / Wajib Pajak -->
+  <g transform="translate(40, 86)">
+    <rect width="400" height="64" rx="10" fill="url(#cardGrad)" stroke="#1c3a57" stroke-width="1.2"/>
+    <rect x="12" y="14" width="36" height="36" rx="8" fill="rgba(63,214,255,0.15)"/>
+    <text x="30" y="38" fill="#3fd6ff" font-family="'Segoe UI', sans-serif" font-size="20" text-anchor="middle">👥</text>
+    <text x="60" y="32" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="bold">Wajib Pajak (WP Orang Pribadi &amp; Badan)</text>
+    <text x="60" y="48" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="10.5">Kontribusi wajib tanpa imbalan langsung demi kepentingan umum</text>
+  </g>
+
+  <!-- Flow Down Arrow -->
+  <path d="M 240,152 L 240,172" stroke="#3fd6ff" stroke-width="2" stroke-dasharray="4 2"/>
+  <polygon points="236,172 244,172 240,178" fill="#3fd6ff"/>
+
+  <!-- Box 2: Kas Negara / APBN -->
+  <g transform="translate(40, 182)">
+    <rect width="400" height="68" rx="10" fill="rgba(255,178,56,0.08)" stroke="rgba(255,178,56,0.4)" stroke-width="1.5"/>
+    <rect x="12" y="16" width="36" height="36" rx="8" fill="rgba(255,178,56,0.15)"/>
+    <text x="30" y="40" fill="#ffb238" font-family="'Segoe UI', sans-serif" font-size="20" text-anchor="middle">🏛️</text>
+    <text x="60" y="34" fill="#ffb238" font-family="'Segoe UI', sans-serif" font-size="13.5" font-weight="bold">Kas Negara / Kas APBN</text>
+    <text x="60" y="52" fill="#e2e8f0" font-family="'Segoe UI', sans-serif" font-size="10.5">Pajak menyumbang >70% total penerimaan APBN Indonesia</text>
+  </g>
+
+  <!-- 4 Pillar Title -->
+  <text x="240" y="272" fill="#3fd6ff" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" letter-spacing="1">4 FUNGSI UTAMA PAJAK</text>
+
+  <!-- 4 Function Pillars Grid -->
+  <!-- 1. Budgetair -->
+  <g transform="translate(36, 286)">
+    <rect width="194" height="84" rx="8" fill="url(#cardGrad)" stroke="#1c3a57" stroke-width="1"/>
+    <rect x="8" y="8" width="24" height="24" rx="6" fill="rgba(63,214,255,0.15)"/>
+    <text x="20" y="25" fill="#3fd6ff" font-size="13" text-anchor="middle">💰</text>
+    <text x="38" y="24" fill="#3fd6ff" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="bold">1. Budgetair</text>
+    <text x="10" y="46" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="9.5">Sumber utama penerimaan dana untuk kas negara membiayai belanja rutin.</text>
+  </g>
+
+  <!-- 2. Regulerend -->
+  <g transform="translate(250, 286)">
+    <rect width="194" height="84" rx="8" fill="url(#cardGrad)" stroke="#1c3a57" stroke-width="1"/>
+    <rect x="8" y="8" width="24" height="24" rx="6" fill="rgba(255,178,56,0.15)"/>
+    <text x="20" y="25" fill="#ffb238" font-size="13" text-anchor="middle">⚖️</text>
+    <text x="38" y="24" fill="#ffb238" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="bold">2. Regulerend</text>
+    <text x="10" y="46" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="9.5">Mengatur perekonomian (contoh: cukai rokok &amp; tarif proteksi produk lokal).</text>
+  </g>
+
+  <!-- 3. Stabilitas -->
+  <g transform="translate(36, 380)">
+    <rect width="194" height="84" rx="8" fill="url(#cardGrad)" stroke="#1c3a57" stroke-width="1"/>
+    <rect x="8" y="8" width="24" height="24" rx="6" fill="rgba(61,220,132,0.15)"/>
+    <text x="20" y="25" fill="#3ddc84" font-size="13" text-anchor="middle">📈</text>
+    <text x="38" y="24" fill="#3ddc84" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="bold">3. Stabilitas</text>
+    <text x="10" y="46" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="9.5">Menjaga stabilitas moneter, mengendalikan laju inflasi &amp; nilai tukar.</text>
+  </g>
+
+  <!-- 4. Redistribusi -->
+  <g transform="translate(250, 380)">
+    <rect width="194" height="84" rx="8" fill="url(#cardGrad)" stroke="#1c3a57" stroke-width="1"/>
+    <rect x="8" y="8" width="24" height="24" rx="6" fill="rgba(255,77,77,0.15)"/>
+    <text x="20" y="25" fill="#ff4d4d" font-size="13" text-anchor="middle">🤝</text>
+    <text x="38" y="24" fill="#ff4d4d" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="bold">4. Redistribusi</text>
+    <text x="10" y="46" fill="#cbd5e1" font-family="'Segoe UI', sans-serif" font-size="9.5">Memeratakan pendapatan via subsidi, bansos, dan fasilitas umum.</text>
+  </g>
+
+  <!-- Output / Manfaat Kolektif -->
+  <g transform="translate(36, 480)">
+    <rect width="408" height="114" rx="10" fill="rgba(10, 24, 40, 0.95)" stroke="rgba(63,214,255,0.3)" stroke-width="1.2"/>
+    <text x="204" y="24" fill="#3fd6ff" font-family="'Segoe UI', sans-serif" font-size="11.5" font-weight="bold" text-anchor="middle">OUTPUT UNTUK KEMAKMURAN RAKYAT</text>
+    
+    <g transform="translate(16, 38)">
+      <circle cx="16" cy="14" r="14" fill="rgba(63,214,255,0.1)"/>
+      <text x="16" y="20" font-size="14" text-anchor="middle">🛣️</text>
+      <text x="40" y="14" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="600">Infrastruktur</text>
+      <text x="40" y="26" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="9">Jalan, tol, jembatan, bandara</text>
+    </g>
+
+    <g transform="translate(214, 38)">
+      <circle cx="16" cy="14" r="14" fill="rgba(61,220,132,0.1)"/>
+      <text x="16" y="20" font-size="14" text-anchor="middle">🎓</text>
+      <text x="40" y="14" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="600">Pendidikan &amp; Kesehatan</text>
+      <text x="40" y="26" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="9">BOS, KIP, BPJS PBI, Puskesmas</text>
+    </g>
+
+    <g transform="translate(16, 74)">
+      <circle cx="16" cy="14" r="14" fill="rgba(255,178,56,0.1)"/>
+      <text x="16" y="20" font-size="14" text-anchor="middle">🛡️</text>
+      <text x="40" y="14" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="600">Pertahanan &amp; Keamanan</text>
+      <text x="40" y="26" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="9">TNI, Polri, kedaulatan NKRI</text>
+    </g>
+
+    <g transform="translate(214, 74)">
+      <circle cx="16" cy="14" r="14" fill="rgba(255,77,77,0.1)"/>
+      <text x="16" y="20" font-size="14" text-anchor="middle">⚡</text>
+      <text x="40" y="14" fill="#ffffff" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="600">Subsidi Publik</text>
+      <text x="40" y="26" fill="#94a3b8" font-family="'Segoe UI', sans-serif" font-size="9">Subsidi BBM, listrik, pupuk</text>
+    </g>
+  </g>
+</svg>
